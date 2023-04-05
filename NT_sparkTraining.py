@@ -71,17 +71,13 @@ df_merged_stock.display()
 
 # COMMAND ----------
 
-df_merged_stock.write.options(header='True', delimiter=',') \
- .csv("/Workspace/Repos/aminata.gueye@avanade.com/Spark-Fundamentals/Stock")
+df_merged_stock.write.options(header='True', delimiter=';') \
+ .csv("/mnt/spark_training/AllStock.csv")
 
 # COMMAND ----------
 
-Stock
-
-# COMMAND ----------
-
-df_merged_stock.to_csv('Stock', )
-# , encoding='utf-8', index=False)
+df_merged_district.write.options(header='True', delimiter=';') \
+ .csv("/mnt/spark_training/AllDistrict.csv")
 
 # COMMAND ----------
 
