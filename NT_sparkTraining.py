@@ -64,3 +64,25 @@ df_merged_district.display()
 
 df_merged_stock = df_RB_stock.unionByName(df_GH_stock)
 df_merged_stock.display()
+
+# COMMAND ----------
+
+
+
+# COMMAND ----------
+
+df_merged_stock.write.options(header='True', delimiter=',') \
+ .csv("/Workspace/Repos/aminata.gueye@avanade.com/Spark-Fundamentals/Stock")
+
+# COMMAND ----------
+
+Stock
+
+# COMMAND ----------
+
+df_merged_stock.to_csv('Stock', )
+# , encoding='utf-8', index=False)
+
+# COMMAND ----------
+
+
